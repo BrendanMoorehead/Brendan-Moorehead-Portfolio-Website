@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+}
+h1{
+    font-family: 'Outfit', sans-serif;
+      user-select: none;
+      font-size: 2.5rem;
+      padding: 3rem;
+}
+p{
+  user-select: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  padding-left: 3rem;
+  margin-right: 5rem;
+  overflow: hidden;
+}
+button{
+  background: white;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  user-select: none;
+  cursor: pointer;
+}
+#name-anim{
+  width: 80%;
+  height: 40%;
+  margin:10px;
+}
+body{
+  display: grid;
+  background: black;
+  grid-template-columns: 40% 30% 30%;
+}
+.navbar{
+  display: grid;
+  background: white;
+  height: 100vh;
+  width: 50px;
+  transform: skew(-10deg);
+  transition: 0.5s ease;
+  align-content: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.navbar:hover{
+  width: 200px;
+}
+.navbar:hover > button{
+  opacity: 100;
+}
+.navbar > button {
+  opacity: 0;
+  padding: 30px;
+  font-size: 1.3rem;
+  align-self: center;
+  transition-delay: 1s;
+  transition: 0.8s ease;
+}
+.navbar > button:hover{
+  background: black;
+  color:white;
+}
+.navbar-content{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  margin-left: 54%;
+  position: absolute;
+  background: white;
+  height: 100vh;
+  width: 50px;
+  transform: skew(-10deg);
+  transition: 0.8s ease;
+  align-content: center;
+
+}
+
+.fa-chevron-left {
+  visibility: hidden;
+  overflow: hidden;
+  font-size: 250%;
+  color: black;
+}
+.content-header{
+  opacity: 0;
+  grid-column: 1/3;
+  transition: 1s ease;
+}
+.content-text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 500px;
+  opacity: 0;
+  transition: 1s ease;
+}
