@@ -89,8 +89,7 @@ body{
 }
 .content-text{
   text-overflow: ellipsis;
-  overflow: hidden;
-  min-width: 500px;
+  min-width: 25vw;
   opacity: 0;
   transition: 1s ease;
 }
